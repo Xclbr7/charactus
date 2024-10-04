@@ -4,7 +4,7 @@
 
 Charactus is a vibrant, interactive platform showcasing a diverse collection of AI characters for various applications. From historical figures to fictional personas, technical assistants to celebrities, Charactus offers a rich array of meticulously crafted characters, each with unique traits, backstories, and conversational styles.
 
-![Charactus Screenshot](path/to/screenshot.png)
+https://xclbr7.github.io/charactus
 
 ## 🌟 Features
 
