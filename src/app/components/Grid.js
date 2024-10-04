@@ -39,6 +39,7 @@ export const Grid = () => {
   useEffect(() => {
     if (hoveredCard) {
       fetchJsonData(`./characters/${characterData[hoveredCard - 1].code}.json`);
+      console.log(`JSON data for character ${characterData[hoveredCard - 1].code}:`, jsonData);
     }
   }, [hoveredCard]);
 

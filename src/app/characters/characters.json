@@ -59,15 +59,15 @@
     },
     {
         "id": "12",
-        "name": "Eren Yeager",
-        "code": "eren_yaeger",
-        "existence": "Fictional"
-    },
-    {
-        "id": "13",
         "name": "Ginger",
         "code": "ginger",
         "existence": "Animal"
+    },
+    {
+        "id": "13",
+        "name": "Eren Yeager",
+        "code": "eren_yeager",
+        "existence": "Fictional"
     },
     {
         "id": "14",
@@ -96,6 +96,12 @@
         "id": "18",
         "name": "Tony Stark",
         "code": "tony_stark",
+        "existence": "Fictional"
+    },
+    {
+        "id": "19",
+        "name": "Cinderella",
+        "code": "cinderella",
         "existence": "Fictional"
     }
 ]
