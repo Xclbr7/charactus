@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "name": "Ana De Armas",
+        "code": "ana_de_armas"
+    },
+    {
+        "id": "2",
+        "name": "Glen Powell",
+        "code": "glen_powell"
+    },
+    {
+        "id": "3",
+        "name": "Anne Hathaway",
+        "code": "anne_hathaway"
+    },
+    {
+        "id": "4",
+        "name": "Sydney Sweeney",
+        "code": "sydney_sweeney"
+    },
+    {
+        "id": "5",
+        "name": "Janhvi Kapoor",
+        "code": "janhvi_kapoor"
+    },
+    {
+        "id": "6",
+        "name": "John Wick",
+        "code": "john_wick",
+        "existence": "Fictional"
+    },
+    {
+        "id": "7",
+        "name": "Elon Musk",
+        "code": "elon_musk"
+    },
+    {
+        "id": "7",
+        "name": "Black Widow",
+        "code": "black_widow",
+        "existence": "Fictional"
+    }
+]

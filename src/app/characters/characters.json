@@ -1,0 +1,54 @@
+[
+    {
+        "id": "1",
+        "name": "Ana De Armas",
+        "code": "ana_de_armas"
+    },
+    {
+        "id": "2",
+        "name": "Anne Hathaway",
+        "code": "anne_hathaway"
+    },
+    {
+        "id": "3",
+        "name": "Sydney Sweeney",
+        "code": "sydney_sweeney"
+    },
+    {
+        "id": "4",
+        "name": "Janhvi Kapoor",
+        "code": "janhvi_kapoor"
+    },
+    {
+        "id": "5",
+        "name": "Glen Powell",
+        "code": "glen_powell"
+    },
+    {
+        "id": "6",
+        "name": "Amber Heard",
+        "code": "amber_heard"
+    },
+    {
+        "id": "7",
+        "name": "Black Widow",
+        "code": "black_widow",
+        "existence": "Fictional"
+    },
+    {
+        "id": "8",
+        "name": "Elon Musk",
+        "code": "elon_musk"
+    },
+    {
+        "id": "9",
+        "name": "John Wick",
+        "code": "john_wick",
+        "existence": "Fictional"
+    },
+    {
+        "id": "10",
+        "name": "Megan Fox",
+        "code": "megan_fox"
+    }
+]
