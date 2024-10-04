@@ -50,5 +50,52 @@
         "id": "10",
         "name": "Megan Fox",
         "code": "megan_fox"
+    },
+    {
+        "id": "11",
+        "name": "Aphrodite",
+        "code": "aphrodite",
+        "existence": "Mythological"
+    },
+    {
+        "id": "12",
+        "name": "Eren Yeager",
+        "code": "eren_yaeger",
+        "existence": "Fictional"
+    },
+    {
+        "id": "13",
+        "name": "Ginger",
+        "code": "ginger",
+        "existence": "Animal"
+    },
+    {
+        "id": "14",
+        "name": "Harley Quinn",
+        "code": "harley_quinn",
+        "existence": "Fictional"
+    },
+    {
+        "id": "15",
+        "name": "Henry Cavill",
+        "code": "henry_cavill"
+    },
+    {
+        "id": "16",
+        "name": "Jon Snow",
+        "code": "jon_snow",
+        "existence": "Fictional"
+    },
+    {
+        "id": "17",
+        "name": "Medusa",
+        "code": "medusa",
+        "existence": "Mythological"
+    },
+    {
+        "id": "18",
+        "name": "Tony Stark",
+        "code": "tony_stark",
+        "existence": "Fictional"
     }
 ]
