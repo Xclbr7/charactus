@@ -1,107 +1,127 @@
 [
-    {
-        "id": "1",
-        "name": "Ana De Armas",
-        "code": "ana_de_armas"
-    },
-    {
-        "id": "2",
-        "name": "Anne Hathaway",
-        "code": "anne_hathaway"
-    },
-    {
-        "id": "3",
-        "name": "Sydney Sweeney",
-        "code": "sydney_sweeney"
-    },
-    {
-        "id": "4",
-        "name": "Janhvi Kapoor",
-        "code": "janhvi_kapoor"
-    },
-    {
-        "id": "5",
-        "name": "Glen Powell",
-        "code": "glen_powell"
-    },
-    {
-        "id": "6",
-        "name": "Amber Heard",
-        "code": "amber_heard"
-    },
-    {
-        "id": "7",
-        "name": "Black Widow",
-        "code": "black_widow",
-        "existence": "Fictional"
-    },
-    {
-        "id": "8",
-        "name": "Elon Musk",
-        "code": "elon_musk"
-    },
-    {
-        "id": "9",
-        "name": "John Wick",
-        "code": "john_wick",
-        "existence": "Fictional"
-    },
-    {
-        "id": "10",
-        "name": "Megan Fox",
-        "code": "megan_fox"
-    },
-    {
-        "id": "11",
-        "name": "Aphrodite",
-        "code": "aphrodite",
-        "existence": "Mythological"
-    },
-    {
-        "id": "12",
-        "name": "Ginger",
-        "code": "ginger",
-        "existence": "Animal"
-    },
-    {
-        "id": "13",
-        "name": "Eren Yeager",
-        "code": "eren_yeager",
-        "existence": "Fictional"
-    },
-    {
-        "id": "14",
-        "name": "Harley Quinn",
-        "code": "harley_quinn",
-        "existence": "Fictional"
-    },
-    {
-        "id": "15",
-        "name": "Henry Cavill",
-        "code": "henry_cavill"
-    },
-    {
-        "id": "16",
-        "name": "Jon Snow",
-        "code": "jon_snow",
-        "existence": "Fictional"
-    },
-    {
-        "id": "17",
-        "name": "Medusa",
-        "code": "medusa",
-        "existence": "Mythological"
-    },
-    {
-        "id": "18",
-        "name": "Tony Stark",
-        "code": "tony_stark",
-        "existence": "Fictional"
-    },
-    {
-        "id": "19",
-        "name": "Cinderella",
-        "code": "cinderella",
-        "existence": "Fictional"
-    }
+  {
+    "id": "1",
+    "name": "Ana De Armas",
+    "code": "ana_de_armas"
+  },
+  {
+    "id": "2",
+    "name": "Anne Hathaway",
+    "code": "anne_hathaway"
+  },
+  {
+    "id": "3",
+    "name": "Sydney Sweeney",
+    "code": "sydney_sweeney"
+  },
+  {
+    "id": "4",
+    "name": "Janhvi Kapoor",
+    "code": "janhvi_kapoor"
+  },
+  {
+    "id": "5",
+    "name": "Glen Powell",
+    "code": "glen_powell"
+  },
+  {
+    "id": "6",
+    "name": "Amber Heard",
+    "code": "amber_heard"
+  },
+  {
+    "id": "7",
+    "name": "Black Widow",
+    "code": "black_widow",
+    "existence": "Fictional"
+  },
+  {
+    "id": "8",
+    "name": "Elon Musk",
+    "code": "elon_musk"
+  },
+  {
+    "id": "9",
+    "name": "John Wick",
+    "code": "john_wick",
+    "existence": "Fictional"
+  },
+  {
+    "id": "10",
+    "name": "Megan Fox",
+    "code": "megan_fox"
+  },
+  {
+    "id": "11",
+    "name": "Aphrodite",
+    "code": "aphrodite",
+    "existence": "Mythological"
+  },
+  {
+    "id": "12",
+    "name": "Ginger",
+    "code": "ginger",
+    "existence": "Animal"
+  },
+  {
+    "id": "13",
+    "name": "Eren Yeager",
+    "code": "eren_yeager",
+    "existence": "Fictional"
+  },
+  {
+    "id": "14",
+    "name": "Harley Quinn",
+    "code": "harley_quinn",
+    "existence": "Fictional"
+  },
+  {
+    "id": "15",
+    "name": "Henry Cavill",
+    "code": "henry_cavill"
+  },
+  {
+    "id": "16",
+    "name": "Jon Snow",
+    "code": "jon_snow",
+    "existence": "Fictional"
+  },
+  {
+    "id": "17",
+    "name": "Medusa",
+    "code": "medusa",
+    "existence": "Mythological"
+  },
+  {
+    "id": "18",
+    "name": "Tony Stark",
+    "code": "tony_stark",
+    "existence": "Fictional"
+  },
+  {
+    "id": "19",
+    "name": "Cinderella",
+    "code": "cinderella",
+    "existence": "Fictional"
+  },
+  {
+    "id": "20",
+    "name": "Addison Rae",
+    "code": "addison_rae"
+  },
+  {
+    "id": "21",
+    "name": "Bella Poarch",
+    "code": "bella_poarch"
+  },
+  {
+    "id": "22",
+    "name": "Gigi Hadid",
+    "code": "gigi_hadid"
+  },
+  {
+    "id": "23",
+    "name": "Kylie Jenner",
+    "code": "kylie_jenner"
+  }
 ]
