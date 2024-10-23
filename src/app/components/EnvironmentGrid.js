@@ -1,7 +1,7 @@
 "use client";
 import React, { useState, useEffect } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import characterData from "../characters/characters.json";
+import environmentData from "../allEnvironments/environments.json";
 import { useDialog } from "../contexts/DialogContext";
 import { Button } from "@/components/ui/button";
 import {
@@ -15,7 +15,7 @@ import {
   } from "@/components/ui/pagination"
   
 
-export const Grid = ({ searchTerm }) => {
+export const EnvironmentGrid = ({ searchTerm }) => {
   const [jsonData, setJsonData] = useState(null);
   const [isHovered, setIsHovered] = useState(false);
   const [hoveredCard, setHoveredCard] = useState(null);
@@ -24,7 +24,7 @@ export const Grid = ({ searchTerm }) => {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   const charactersPerPage = 12;
-  // const totalPages = Math.ceil(characterData.length / charactersPerPage);
+  // const totalPages = Math.ceil(environmentData.length / charactersPerPage);
 
   const fetchJsonData = async (location) => {
     try {
@@ -39,8 +39,8 @@ export const Grid = ({ searchTerm }) => {
 
   useEffect(() => {
     if (hoveredCard) {
-      fetchJsonData(`./characters/${characterData[hoveredCard - 1].code}.json`);
-      console.log(`JSON data for character ${characterData[hoveredCard - 1].code}:`, jsonData);
+      fetchJsonData(`./allEnvironments/${environmentData[hoveredCard - 1].code}.json`);
+      console.log(`JSON data for character ${environmentData[hoveredCard - 1].code}:`, jsonData);
     }
   }, [hoveredCard]);
 
@@ -53,7 +53,7 @@ export const Grid = ({ searchTerm }) => {
   //   console.log(searchTerm)
   // }, [searchTerm])
 
-  const filteredCharacters = characterData.filter(character => {
+  const filteredCharacters = environmentData.filter(character => {
     const searchTermLower = searchTerm.toLowerCase().trim();
     const nameParts = character.name.toLowerCase().split(' ');
     
@@ -98,11 +98,11 @@ const currentCharacters = filteredCharacters.slice(indexOfFirstCharacter, indexO
               setChar(character);
             }}
           >
-            <CardContent className="flex flex-col justify-end items-center p-4 aspect-[4/5] relative">
+            <CardContent className="flex flex-col justify-end items-center p-4 aspect-[4/5] relative bg-black">
               <img
-                src={`./characters/${character.code}.png`}
+                src={`${character.img_link}`}
                 alt={character.id}
-                className="absolute inset-0 w-full h-full object-cover object-top hover:scale-110 transition-transform duration-500"
+                className="absolute inset-0 w-full h-full object-cover object-top hover:scale-110 transition-transform duration-500 bg-black"
               />
               <div
                 className={`
@@ -120,12 +120,12 @@ const currentCharacters = filteredCharacters.slice(indexOfFirstCharacter, indexO
                   absolute top-4 w-full h-full text-sm font-medium text-center 
                   tracking-widest pointer-events-none text-white z-10 p-4
                   transition-all duration-500 ease-in-out
-                  ${isHovered && character.id === hoveredCard && jsonData?.name === character.name 
+                  ${isHovered && character.id === hoveredCard
                     ? "opacity-100 visible" 
                     : "opacity-0 invisible"}
                 `}
               >
-                {isHovered && character.id === hoveredCard && jsonData?.name === character.name && jsonData?.creatorcomment}
+                {isHovered && character.id === hoveredCard && jsonData?.summary}
               </span>
               <span className="text-md font-light text-center uppercase tracking-widest pointer-events-none text-gray-400 z-10">
                     {character?.existence}

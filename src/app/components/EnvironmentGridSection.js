@@ -17,20 +17,24 @@ import { CarouselSliderVertical } from "./CarouselSliderVertical";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { Background2 } from "./Background2";
 import { Grid } from "./Grid";
+import { Input } from "@/components/ui/input";
+import { EnvironmentGrid } from "./EnvironmentGrid";
 
 
 // --------------------------------------------------------------
 
-export const GridSection = () => {
-  const [searchTerm, setSearchTerm] = useState('');
-  
+export const EnvironmentGridSection = () => {
+ 
+const [searchTerm, setSearchTerm] = useState('');
+
+
   // --------------------------------------------------------------
 
   return (
-    <div className="w-full pt-20 flex flex-col justify-center items-center text-white relative ">
+    <div className="w-full pt-20 flex flex-col justify-center items-center text-white relative pb-20 ">
       <Background2 />
       <div className="w-full flex flex-row justify-between items-center text-white relative px-20 mb-10">
-      <h1 className="text-2xl font-medium text-white uppercase tracking-widest">All Characters</h1>
+      <h1 className="text-2xl font-medium text-white uppercase tracking-widest">All Environments</h1>
       <input
         type="text"
         placeholder="Search"
@@ -39,7 +43,7 @@ export const GridSection = () => {
         className="w-1/4 h-12 rounded-full bg-[#00020f] border-[1px] border-white border-opacity-[30%] text-white px-4 active:outline-none focus:outline-none placeholder-opacity-30 placeholder-white"
       />
       </div>
-    <Grid searchTerm={searchTerm}/>
+    <EnvironmentGrid searchTerm={searchTerm} />
     </div>
   );
 };

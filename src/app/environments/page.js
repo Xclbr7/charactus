@@ -4,9 +4,14 @@ import { useState, useEffect } from 'react';
 import { Navbar } from "@/app/components/Navbar";
 import { Footer } from "@/app/components/Footer";
 import { DialogProvider } from "@/app/contexts/DialogContext";
+import { EnvironmentHeroSection } from "@/app/components/EnvironmentHeroSection";
+import { EnvironmentGridSection } from "@/app/components/EnvironmentGridSection";
+import { Modal } from '../components/Modal';
+import { EnvModal } from '../components/EnvModal';
 
 export default function Environments() {
   const [isMobile, setIsMobile] = useState(false);
+  const [page, setPage] = useState('environments');
 
   useEffect(() => {
     const checkIfMobile = () => {
@@ -35,11 +40,10 @@ export default function Environments() {
   return (
     <div className="relative flex flex-col min-h-screen h-full w-[100%] overflow-x-hidden">
       <DialogProvider>
-        <Navbar />
-        <main className="flex-grow">
-          <h1 className="text-4xl font-bold text-center my-8">Environments</h1>
-          {/* Add your environments content here */}
-        </main>
+        <EnvModal />
+      <Navbar page={page}/>
+       <EnvironmentHeroSection />
+       <EnvironmentGridSection />
         <Footer />
       </DialogProvider>
     </div>

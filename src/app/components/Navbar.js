@@ -1,6 +1,8 @@
-import React, { useState, useEffect } from 'react'
 
-export const Navbar = () => {
+import React, { useState, useEffect } from 'react'
+import Link from 'next/link';
+
+export const Navbar = ({page}) => {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
   const [atTop, setAtTop] = useState(true);
@@ -28,7 +30,9 @@ export const Navbar = () => {
       {/* Rest of your navbar content */}
       <div className='flex w-full items-center justify-between gap-12'>
         <div className='flex items-center'>
+        <Link href="/">
           <img src="./logo_main.png" className="h-[50px]" alt="logo" />
+        </Link>
           {/* <h1 className='text-white font-bold text-2xl text-center tracking-widest pointer-events-none'>CHARACTUS</h1> */}
         </div>
         <div className='flex items-center justify-between gap-4'>
@@ -40,12 +44,17 @@ export const Navbar = () => {
           </a>
           
           <div className='w-[1px] h-[10px] bg-[#6DCEFF] mx-2'></div>
-          <a
-            className="text-gray-400 text-md font-medium transition-all duration-300 pointer-events-none"
-            href=""
+          <Link href="/environments">
+          <p
+            className={`
+              ${page === 'environments' ? 'bg-gradient-to-r from-[#b6f492] to-[#90B2D8] text-transparent bg-clip-text pointer-events-none' : 'text-white hover:text-[#5EFFA9]'}
+              text-md font-medium transition-all duration-300
+            `}
+            
           >
-            ENVIRONMENTS (SOON)
-          </a>
+            ENVIRONMENTS
+          </p>
+          </Link>
         </div>
       </div>
     </nav>
