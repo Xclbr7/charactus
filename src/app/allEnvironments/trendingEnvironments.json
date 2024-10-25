@@ -1,56 +1,50 @@
 [
-    {
+  {
       "id": "1",
-      "name": "Movie Set Love",
-      "code": "movie_set_love",
-      "img_link": "https://static01.nyt.com/images/2020/12/22/arts/22sylvie-2/22sylvie-2-mediumSquareAt3X-v3.jpg"
-    },
-    {
-        "id": "2",
-        "name": "Movie Set Love",
-        "code": "movie_set_love",
-        "img_link": "https://static01.nyt.com/images/2020/12/22/arts/22sylvie-2/22sylvie-2-mediumSquareAt3X-v3.jpg"
-      },
-      {
-        "id": "3",
-        "name": "Movie Set Love",
-        "code": "movie_set_love",
-        "img_link": "https://static01.nyt.com/images/2020/12/22/arts/22sylvie-2/22sylvie-2-mediumSquareAt3X-v3.jpg"
-      },
-      {
-        "id": "4",
-        "name": "Movie Set Love",
-        "code": "movie_set_love",
-        "img_link": "https://static01.nyt.com/images/2020/12/22/arts/22sylvie-2/22sylvie-2-mediumSquareAt3X-v3.jpg"
-      },
-      {
-        "id": "5",
-        "name": "Movie Set Love",
-        "code": "movie_set_love",
-        "img_link": "https://static01.nyt.com/images/2020/12/22/arts/22sylvie-2/22sylvie-2-mediumSquareAt3X-v3.jpg"
-      },
-      {
-        "id": "6",
-        "name": "Movie Set Love",
-        "code": "movie_set_love",
-        "img_link": "https://static01.nyt.com/images/2020/12/22/arts/22sylvie-2/22sylvie-2-mediumSquareAt3X-v3.jpg"
-      },
-      {
-        "id": "7",
-        "name": "Movie Set Love",
-        "code": "movie_set_love",
-        "img_link": "https://static01.nyt.com/images/2020/12/22/arts/22sylvie-2/22sylvie-2-mediumSquareAt3X-v3.jpg"
-      },
-      {
-        "id": "8",
-        "name": "Movie Set Love",
-        "code": "movie_set_love",
-        "img_link": "https://static01.nyt.com/images/2020/12/22/arts/22sylvie-2/22sylvie-2-mediumSquareAt3X-v3.jpg"
-      },
-      {
-        "id": "9",
-        "name": "Movie Set Love",
-        "code": "movie_set_love",
-        "img_link": "https://static01.nyt.com/images/2020/12/22/arts/22sylvie-2/22sylvie-2-mediumSquareAt3X-v3.jpg"
-      }
+      "name": "The Interview",
+      "code": "the_interview",
+      "img_link": "https://i.ytimg.com/vi/UxAQ9rXoqn8/maxresdefault.jpg"
+  },
+  {
+      "id": "2",
+      "name": "Seaside Murder",
+      "code": "seaside_murder",
+      "img_link": "https://t4.ftcdn.net/jpg/07/71/79/11/360_F_771791172_sjYO2zmBBMjQhd6IETWozDxZJ4euSldy.jpg"
+  },
+  {
+      "id": "3",
+      "name": "Planet Elyria",
+      "code": "planet_elyria",
+      "img_link": "https://ideogram.ai/assets/image/lossless/response/rCyAp9ShRK-oF2TFP1UjGg"
+  },
+  {
+      "id": "4",
+      "name": "Spy Mission",
+      "code": "spy_mission",
+      "img_link": "https://ideogram.ai/assets/progressive-image/balanced/response/Yo8Bk1OERa-yd7wgVVOcaQ"
+  },
+  {
+      "id": "5",
+      "name": "Robbery Trial",
+      "code": "robbery_courtroom",
+      "img_link": "https://ideogram.ai/assets/progressive-image/balanced/response/Lc9Yt_rETB-kcOubcTWJ4g"
+  },
+  {
+      "id": "6",
+      "name": "Anger Therapy",
+      "code": "anger_therapy",
+      "img_link": "https://ideogram.ai/assets/image/lossless/response/vONU1WxTTNGLwa-MTkn6xQ"
+  },
+  {
+      "id": "7",
+      "name": "The Follower",
+      "code": "the_follower",
+      "img_link": "https://ideogram.ai/assets/image/lossless/response/OugUsi8US-mnkQ9ZOzkUbA"
+  },
+  {
+      "id": "8",
+      "name": "Elimination",
+      "code": "elimination",
+      "img_link": "https://ideogram.ai/assets/progressive-image/balanced/response/2e3W5DqyQx2IW9w83jXrLQ"
+  }
 ]

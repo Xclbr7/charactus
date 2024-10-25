@@ -31,7 +31,7 @@ const [searchTerm, setSearchTerm] = useState('');
   // --------------------------------------------------------------
 
   return (
-    <div className="w-full pt-20 flex flex-col justify-center items-center text-white relative pb-20 ">
+    <div className="w-full pt-20 flex flex-col justify-center items-center text-white relative pb-16 ">
       <Background2 />
       <div className="w-full flex flex-row justify-between items-center text-white relative px-20 mb-10">
       <h1 className="text-2xl font-medium text-white uppercase tracking-widest">All Environments</h1>

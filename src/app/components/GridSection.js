@@ -27,9 +27,9 @@ export const GridSection = () => {
   // --------------------------------------------------------------
 
   return (
-    <div className="w-full pt-20 flex flex-col justify-center items-center text-white relative ">
+    <div className="w-full pt-20 flex flex-col justify-center items-center text-white relative pb-16 ">
       <Background2 />
-      <div className="w-full flex flex-row justify-between items-center text-white relative px-20 mb-10">
+      <div className="w-full flex flex-row justify-between items-center text-white relative px-20 mb-16">
       <h1 className="text-2xl font-medium text-white uppercase tracking-widest">All Characters</h1>
       <input
         type="text"
