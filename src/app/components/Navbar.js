@@ -36,14 +36,14 @@ export const Navbar = ({page}) => {
           {/* <h1 className='text-white font-bold text-2xl text-center tracking-widest pointer-events-none'>CHARACTUS</h1> */}
         </div>
         <div className='flex items-center justify-between gap-4'>
-          <a
+          {/* <a
             className="text-white text-md font-medium hover:text-[#5EFFA9] transition-all duration-300"
             href="https://www.youtube.com/@xclbrxtra"
           >
             YOUTUBE
           </a>
           
-          <div className='w-[1px] h-[10px] bg-[#6DCEFF] mx-2'></div>
+          <div className='w-[1px] h-[10px] bg-[#6DCEFF] mx-2'></div> */}
           <Link href="/environments">
           <p
             className={`
