@@ -39,8 +39,8 @@ export const EnvironmentGrid = ({ searchTerm }) => {
 
   useEffect(() => {
     if (hoveredCard) {
-      fetchJsonData(`./allEnvironments/${environmentData[hoveredCard - 1].code}.json`);
-      console.log(`JSON data for character ${environmentData[hoveredCard - 1].code}:`, jsonData);
+      fetchJsonData(`./allEnvironments/${environmentData[hoveredCard-1]?.code}.json`);
+      console.log(`JSON data for character ${environmentData[hoveredCard - 1]?.code}:`, jsonData);
     }
   }, [hoveredCard]);
 
@@ -62,6 +62,7 @@ export const EnvironmentGrid = ({ searchTerm }) => {
 
   const handleCardHover = (card, bool) => {
     setHoveredCard(bool ? card.id : null);
+    !bool && setJsonData(null)
     setIsHovered(bool);
   };
 

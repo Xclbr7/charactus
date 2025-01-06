@@ -54,16 +54,17 @@
   },
   {
     "id": "11",
-    "name": "Ginger",
-    "code": "ginger",
-    "existence": "Animal"
-  },
-  {
-    "id": "12",
     "name": "Eren Yeager",
     "code": "eren_yeager",
     "existence": "Fictional"
   },
+  {
+    "id": "12",
+    "name": "Ginger",
+    "code": "ginger",
+    "existence": "Animal"
+  },
+
   {
     "id": "13",
     "name": "Harley Quinn",

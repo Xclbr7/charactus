@@ -62,6 +62,7 @@ export const Grid = ({ searchTerm }) => {
 
   const handleCardHover = (card, bool) => {
     setHoveredCard(bool ? card.id : null);
+    !bool && setJsonData(null)
     setIsHovered(bool);
   };
 
