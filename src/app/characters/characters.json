@@ -28,7 +28,7 @@
     "id": "6",
     "name": "Black Widow",
     "code": "black_widow",
-    "existence": "Fictional"
+    "existence": "Marvel Universe"
   },
   {
     "id": "7",
@@ -50,13 +50,13 @@
     "id": "10",
     "name": "Aphrodite",
     "code": "aphrodite",
-    "existence": "Mythological"
+    "existence": "Greek Mythology"
   },
   {
     "id": "11",
     "name": "Eren Yeager",
     "code": "eren_yeager",
-    "existence": "Fictional"
+    "existence": "AOT"
   },
   {
     "id": "12",
@@ -69,7 +69,7 @@
     "id": "13",
     "name": "Harley Quinn",
     "code": "harley_quinn",
-    "existence": "Fictional"
+    "existence": "DC Universe"
   },
   {
     "id": "14",
@@ -80,13 +80,13 @@
     "id": "15",
     "name": "Jon Snow",
     "code": "jon_snow",
-    "existence": "Fictional"
+    "existence": "Game Of Thrones"
   },
   {
     "id": "16",
     "name": "Medusa",
     "code": "medusa",
-    "existence": "Mythological"
+    "existence": "Greek Mythology"
   },
   {
     "id": "17",
@@ -98,7 +98,7 @@
     "id": "18",
     "name": "Cinderella",
     "code": "cinderella",
-    "existence": "Fictional"
+    "existence": "Disney Princess"
   },
   {
     "id": "19",
