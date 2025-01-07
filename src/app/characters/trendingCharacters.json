@@ -36,12 +36,18 @@
         "id": "7",
         "name": "Black Widow",
         "code": "black_widow",
-        "existence": "Fictional"
+        "existence": "Marvel Universe"
     },
     {
         "id": "8",
         "name": "Cinderella",
         "code": "cinderella",
-        "existence": "Fictional"
+        "existence": "Disney Princess"
+    },
+    {
+        "id": "9",
+        "name": "Lisa",
+        "code": "lisa",
+        "existence": "BLACKPINK (KPOP)"
     }
 ]
