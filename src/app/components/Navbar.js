@@ -44,17 +44,30 @@ export const Navbar = ({page}) => {
           </a>
           
           <div className='w-[1px] h-[10px] bg-[#6DCEFF] mx-2'></div> */}
+          <div className='flex items-center gap-8 '>
           <Link href="/environments">
           <p
             className={`
-              ${page === 'environments' ? 'bg-gradient-to-r from-[#b6f492] to-[#90B2D8] text-transparent bg-clip-text pointer-events-none' : 'text-white hover:text-[#5EFFA9]'}
-              text-md font-medium transition-all duration-300
+              ${page === 'environments' ? 'bg-gradient-to-r from-[#90FFC8] to-[#A1E1FF] text-transparent bg-clip-text pointer-events-none' : 'text-white hover:text-[#5EFFA9]'}
+              text-md font-medium transition-all duration-300 tracking-[2px]
             `}
             
           >
             ENVIRONMENTS
           </p>
           </Link>
+          <Link href="/character_creator">
+          <p
+            className={`
+              ${page === 'character_creator' ? 'bg-gradient-to-r from-[#90FFC8] to-[#A1E1FF] text-transparent bg-clip-text pointer-events-none' : 'text-white hover:text-[#5EFFA9]'}
+              text-md font-medium transition-all duration-300 tracking-[2px]
+            `}
+            
+          >
+            CHARACTER CREATOR
+          </p>
+          </Link>
+          </div>
         </div>
       </div>
     </nav>
