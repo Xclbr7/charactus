@@ -81,9 +81,14 @@ jobs:
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add src/app/characters/characters.json
+          
+          # Check if there are changes to commit
           if ! git diff-index --quiet HEAD; then
             git commit -m "Update characters.json via GitHub Actions"
-            git push origin main
+            echo "Changes committed, pushing to main..."
+            git push origin main || echo "Push failed, check permissions or branch protection rules."
+          else
+            echo "No changes detected, skipping commit."
           fi
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
