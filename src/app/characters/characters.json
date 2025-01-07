@@ -64,7 +64,6 @@
     "code": "ginger",
     "existence": "Animal"
   },
-
   {
     "id": "13",
     "name": "Harley Quinn",
@@ -119,5 +118,110 @@
     "id": "22",
     "name": "Kylie Jenner",
     "code": "kylie_jenner"
+  },
+  {
+    "id": "23",
+    "name": "Aaron Taylor-Johnson",
+    "code": "aaron_taylor-johnson"
+  },
+  {
+    "id": "24",
+    "name": "Alexandra Daddario",
+    "code": "alexandra_daddario"
+  },
+  {
+    "id": "25",
+    "name": "Alisha Lehmann",
+    "code": "alisha_lehmann"
+  },
+  {
+    "id": "26",
+    "name": "Ariana Grande",
+    "code": "ariana_grande"
+  },
+  {
+    "id": "27",
+    "name": "Blake Lively",
+    "code": "blake_lively"
+  },
+  {
+    "id": "28",
+    "name": "Conor Mcgregor",
+    "code": "conor_mcgregor"
+  },
+  {
+    "id": "29",
+    "name": "Elizabeth Olsen",
+    "code": "elizabeth_olsen"
+  },
+  {
+    "id": "30",
+    "name": "Emily Blunt",
+    "code": "emily_blunt"
+  },
+  {
+    "id": "31",
+    "name": "Irina Shayk",
+    "code": "irina_shayk"
+  },
+  {
+    "id": "32",
+    "name": "Janhvi Kapoor",
+    "code": "janhvi_kapoor"
+  },
+  {
+    "id": "33",
+    "name": "Jennie",
+    "code": "jennie"
+  },
+  {
+    "id": "34",
+    "name": "Jimin",
+    "code": "jimin"
+  },
+  {
+    "id": "35",
+    "name": "Jisoo",
+    "code": "jisoo"
+  },
+  {
+    "id": "36",
+    "name": "Jungkook",
+    "code": "jungkook"
+  },
+  {
+    "id": "37",
+    "name": "Kendall Jenner",
+    "code": "kendall_jenner"
+  },
+  {
+    "id": "38",
+    "name": "Lisa",
+    "code": "lisa"
+  },
+  {
+    "id": "39",
+    "name": "Madelyn Cline",
+    "code": "madelyn_cline"
+  },
+  {
+    "id": "40",
+    "name": "Pedro Pascal",
+    "code": "pedro_pascal"
+  },
+  {
+    "id": "41",
+    "name": "Robert Pattinson",
+    "code": "robert_pattinson"
+  },
+  {
+    "id": "42",
+    "name": "Rose",
+    "code": "rose"
+  },
+  {
+    "id": "43",
+    "name": "Selena Gomez",
+    "code": "selena_gomez"
   }
 ]
