@@ -75,6 +75,16 @@ jobs:
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
       - name: Update characters.json
         run: node scripts/updateCharacters.js
+      # Commit and push changes back to the repository if characters.json was updated.
+      - name: Commit and Push Changes (if any)
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add src/app/characters/characters.json
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Update characters.json via GitHub Actions"
+            git push origin main
+          fi
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       - name: Upload artifact
