@@ -91,7 +91,7 @@
     "id": "17",
     "name": "Tony Stark",
     "code": "tony_stark",
-    "existence": "Fictional"
+    "existence": "Marvel Universe"
   },
   {
     "id": "18",
@@ -172,22 +172,26 @@
   {
     "id": "33",
     "name": "Jennie",
-    "code": "jennie"
+    "code": "jennie",
+    "existence": "BLACKPINK (KPOP)"
   },
   {
     "id": "34",
     "name": "Jimin",
-    "code": "jimin"
+    "code": "jimin",
+    "existence": "BTS (KPOP)"
   },
   {
     "id": "35",
     "name": "Jisoo",
-    "code": "jisoo"
+    "code": "jisoo",
+    "existence": "BLACKPINK (KPOP)"
   },
   {
     "id": "36",
     "name": "Jungkook",
-    "code": "jungkook"
+    "code": "jungkook",
+    "existence": "BTS (KPOP)"
   },
   {
     "id": "37",
@@ -197,7 +201,8 @@
   {
     "id": "38",
     "name": "Lisa",
-    "code": "lisa"
+    "code": "lisa",
+    "existence": "BLACKPINK (KPOP)"
   },
   {
     "id": "39",
@@ -217,7 +222,8 @@
   {
     "id": "42",
     "name": "Rose",
-    "code": "rose"
+    "code": "rose",
+    "existence": "BLACKPINK (KPOP)"
   },
   {
     "id": "43",
