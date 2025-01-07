@@ -13,6 +13,7 @@ import trendinigCharacters from "../characters/trendingCharacters.json";
 import { useState, useEffect } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import { useDialog } from "../contexts/DialogContext";
+import { PngParser } from './PngParser'
 
 export const CarouselSlider = () => {
     const [jsonData, setJsonData] = useState(null);
@@ -23,20 +24,36 @@ export const CarouselSlider = () => {
 
     
   
-    const fetchJsonData = async (location) => {
-      try {
-        const response = await fetch(location);
-        const data = await response.json();
-        setJsonData(data);
-        console.log(`JSON data for character ${location}:`, data);
-      } catch (error) {
-        console.error(`Error fetching JSON for character ${location}:`, error);
-      }
-    };
+   
+     const fetchJsonData = async (filePath) => {
+       try {
+         // Fetch the file first
+         const response = await fetch(filePath);
+         if (!response.ok) throw new Error('Failed to fetch PNG file');
+         
+         // Convert the response to ArrayBuffer
+         const arrayBuffer = await response.arrayBuffer();
+         const charaData = await PngParser.Parse(arrayBuffer);
+         
+         const characterInfo = JSON.parse(charaData);
+         
+         setJsonData(characterInfo);
+         
+       } catch (error) {
+         console.error('Error reading PNG metadata:', error);
+       }
+     };
+     
+    //  useEffect(() => {
+    //    if (char) {
+    //      fetchJsonData(`./characters/${char?.code}.png`);  // Note the leading forward slash
+    //    }
+    //  }, [char]);
+     
   
     useEffect(() => {
       if (hoveredCard) {
-        fetchJsonData(`./characters/${trendinigCharacters[hoveredCard - 1].code}.json`);
+        fetchJsonData(`./characters/${trendinigCharacters[hoveredCard - 1].code}.png`);
       }
     }, [hoveredCard]);
   

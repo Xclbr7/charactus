@@ -13,6 +13,7 @@ import {
     PaginationNext,
     PaginationPrevious,
   } from "@/components/ui/pagination"
+import { PngParser } from './PngParser'
   
 
 export const Grid = ({ searchTerm }) => {
@@ -26,21 +27,40 @@ export const Grid = ({ searchTerm }) => {
   const charactersPerPage = 12;
   // const totalPages = Math.ceil(characterData.length / charactersPerPage);
 
-  const fetchJsonData = async (location) => {
-    try {
-      const response = await fetch(location);
-      const data = await response.json();
-      setJsonData(data);
-    } catch (error) {
-      console.error(`Error fetching JSON for character ${location}:`, error);
-    }
-  };
+  // const fetchJsonData = async (location) => {
+  //   try {
+  //     const response = await fetch(location);
+  //     const data = await response.json();
+  //     setJsonData(data);
+  //   } catch (error) {
+  //     console.error(`Error fetching JSON for character ${location}:`, error);
+  //   }
+  // };
   
+  const fetchJsonData = async (filePath) => {
+         try {
+           // Fetch the file first
+           const response = await fetch(filePath);
+           if (!response.ok) throw new Error('Failed to fetch PNG file');
+           
+           // Convert the response to ArrayBuffer
+           const arrayBuffer = await response.arrayBuffer();
+           const charaData = await PngParser.Parse(arrayBuffer);
+           
+           const characterInfo = JSON.parse(charaData);
+           
+           setJsonData(characterInfo);
+           
+         } catch (error) {
+           console.error('Error reading PNG metadata:', error);
+         }
+       };
+
 
   useEffect(() => {
     if (hoveredCard) {
-      fetchJsonData(`./characters/${characterData[hoveredCard - 1].code}.json`);
-      console.log(`JSON data for character ${characterData[hoveredCard - 1].code}:`, jsonData);
+      fetchJsonData(`./characters/${characterData[hoveredCard - 1].code}.png`);
+      // console.log(`JSON data for character ${characterData[hoveredCard - 1].code}:`, jsonData);
     }
   }, [hoveredCard]);
 

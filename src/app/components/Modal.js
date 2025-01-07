@@ -17,28 +17,49 @@ import { useDialog } from '../contexts/DialogContext'
 import { LuFileJson } from 'react-icons/lu'
 import { TbFileTypePng } from 'react-icons/tb'
 import CodeBox from './CodeBox'
+import { PngParser } from './PngParser'
 
 export const Modal = () => {
   const { open, setOpen, char, setChar } = useDialog();
   const [jsonData, setJsonData] = useState(null);
 
 
-  const fetchJsonData = async (location) => {
+  // const fetchJsonData = async (location) => {
+  //   try {
+  //     const response = await fetch(location);
+  //     const data = await response.json();
+  //     setJsonData(data);
+  //     console.log(`JSON data for character ${location}:`, data);
+  //   } catch (error) {
+  //     console.error(`Error fetching JSON for character ${location}:`, error);
+  //   }
+  // };
+
+  const fetchJsonData = async (filePath) => {
     try {
-      const response = await fetch(location);
-      const data = await response.json();
-      setJsonData(data);
-      console.log(`JSON data for character ${location}:`, data);
+      // Fetch the file first
+      const response = await fetch(filePath);
+      if (!response.ok) throw new Error('Failed to fetch PNG file');
+      
+      // Convert the response to ArrayBuffer
+      const arrayBuffer = await response.arrayBuffer();
+      const charaData = await PngParser.Parse(arrayBuffer);
+      
+      const characterInfo = JSON.parse(charaData);
+      
+      setJsonData(characterInfo);
+      
     } catch (error) {
-      console.error(`Error fetching JSON for character ${location}:`, error);
+      console.error('Error reading PNG metadata:', error);
     }
   };
-
+  
   useEffect(() => {
     if (char) {
-      fetchJsonData(`./characters/${char?.code}.json`);
+      fetchJsonData(`./characters/${char?.code}.png`);  // Note the leading forward slash
     }
   }, [char]);
+  
     
   return (
     <Dialog open={open} onOpenChange={setOpen}>
@@ -56,8 +77,8 @@ export const Modal = () => {
         </DialogHeader>
         <div className='flex flex-row gap-2 w-full'>
         <a 
-      href={`./characters/${char?.code}.json`}
-      download={char?.name + ".json"}
+      href={`data:application/json;charset=utf-8,${encodeURIComponent(JSON.stringify(jsonData, null, 2))}`}
+      download={char?.code + ".json"}
     >
         <Button className="w-full bg-[#145231] hover:bg-gray-900 text-[#7ED4FF] rounded-[3px] transition-all duration-300 text-md flex flex-row gap-1 px-2"><LuFileJson />Download JSON</Button>
 
