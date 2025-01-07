@@ -115,7 +115,7 @@ export default function CharacterForm() {
         const url = window.URL.createObjectURL(blob);
         const a = document.createElement('a');
         a.href = url;
-        a.download = `${formData.name}_with_metadata.png`;
+        a.download = `${formData.name.toLowerCase().replace(/\s+/g, '_')}.png`;
         document.body.appendChild(a);
         a.click();
         window.URL.revokeObjectURL(url);
