@@ -168,7 +168,8 @@
   {
     "id": "32",
     "name": "Janhvi Kapoor",
-    "code": "janhvi_kapoor"
+    "code": "janhvi_kapoor",
+    "existence": "Bollywood"
   },
   {
     "id": "33",
@@ -239,36 +240,43 @@
   {
     "id": "45",
     "name": "Andrej Karpathy",
-    "code": "andrej_karpathy"
+    "code": "andrej_karpathy",
+    "existence": "Entrepreneurs and Innovators"
   },
   {
     "id": "46",
     "name": "Andrew Ng",
-    "code": "andrew_ng"
+    "code": "andrew_ng",
+    "existence": "Entrepreneurs and Innovators"
   },
   {
     "id": "47",
     "name": "Bob Iger",
-    "code": "bob_iger"
+    "code": "bob_iger",
+    "existence": "Entrepreneurs and Innovators"
   },
   {
     "id": "48",
     "name": "Jeff Bezos",
-    "code": "jeff_bezos"
+    "code": "jeff_bezos",
+    "existence": "Entrepreneurs and Innovators"
   },
   {
     "id": "49",
     "name": "Jensen Huang",
-    "code": "jensen_huang"
+    "code": "jensen_huang",
+    "existence": "Entrepreneurs and Innovators"
   },
   {
     "id": "50",
     "name": "Sam Altman",
-    "code": "sam_altman"
+    "code": "sam_altman",
+    "existence": "Entrepreneurs and Innovators"
   },
   {
     "id": "51",
     "name": "Tim Cook",
-    "code": "tim_cook"
+    "code": "tim_cook",
+    "existence": "Entrepreneurs and Innovators"
   }
 ]
