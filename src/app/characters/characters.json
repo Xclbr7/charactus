@@ -235,5 +235,40 @@
     "id": "44",
     "name": "Miranda Kerr",
     "code": "miranda_kerr"
+  },
+  {
+    "id": "45",
+    "name": "Andrej Karpathy",
+    "code": "andrej_karpathy"
+  },
+  {
+    "id": "46",
+    "name": "Andrew Ng",
+    "code": "andrew_ng"
+  },
+  {
+    "id": "47",
+    "name": "Bob Iger",
+    "code": "bob_iger"
+  },
+  {
+    "id": "48",
+    "name": "Jeff Bezos",
+    "code": "jeff_bezos"
+  },
+  {
+    "id": "49",
+    "name": "Jensen Huang",
+    "code": "jensen_huang"
+  },
+  {
+    "id": "50",
+    "name": "Sam Altman",
+    "code": "sam_altman"
+  },
+  {
+    "id": "51",
+    "name": "Tim Cook",
+    "code": "tim_cook"
   }
 ]
