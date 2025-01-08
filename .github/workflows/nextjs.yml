@@ -66,6 +66,7 @@ jobs:
         run: node scripts/updateCharacters.js
       
       - name: Commit and Push Changes (if any)
+        continue-on-error: true
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
