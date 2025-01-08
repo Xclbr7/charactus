@@ -25,12 +25,13 @@
     "id": "5",
     "name": "Sam Altman",
     "code": "sam_altman",
-    "existence": "Entrepreneurs and Innovators"
+    "existence": "Entrepreneurs & Innovators"
   },
   {
     "id": "6",
     "name": "Elon Musk",
-    "code": "elon_musk"
+    "code": "elon_musk",
+    "existence": "Entrepreneurs & Innovators"
   },
   {
     "id": "7",

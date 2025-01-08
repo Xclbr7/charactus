@@ -33,7 +33,8 @@
   {
     "id": "7",
     "name": "Elon Musk",
-    "code": "elon_musk"
+    "code": "elon_musk",
+    "existence": "Entrepreneurs & Innovators"
   },
   {
     "id": "8",
@@ -253,30 +254,30 @@
     "id": "47",
     "name": "Bob Iger",
     "code": "bob_iger",
-    "existence": "Entrepreneurs and Innovators"
+    "existence": "Entrepreneurs & Innovators"
   },
   {
     "id": "48",
     "name": "Jeff Bezos",
     "code": "jeff_bezos",
-    "existence": "Entrepreneurs and Innovators"
+    "existence": "Entrepreneurs & Innovators"
   },
   {
     "id": "49",
     "name": "Jensen Huang",
     "code": "jensen_huang",
-    "existence": "Entrepreneurs and Innovators"
+    "existence": "Entrepreneurs & Innovators"
   },
   {
     "id": "50",
     "name": "Sam Altman",
     "code": "sam_altman",
-    "existence": "Entrepreneurs and Innovators"
+    "existence": "Entrepreneurs & Innovators"
   },
   {
     "id": "51",
     "name": "Tim Cook",
     "code": "tim_cook",
-    "existence": "Entrepreneurs and Innovators"
+    "existence": "Entrepreneurs & Innovators"
   }
 ]
