@@ -279,5 +279,30 @@
     "name": "Tim Cook",
     "code": "tim_cook",
     "existence": "Entrepreneurs & Innovators"
+  },
+  {
+    "id": "52",
+    "name": "Geralt Of Rivia",
+    "code": "geralt_of_rivia"
+  },
+  {
+    "id": "53",
+    "name": "Scarlett Witch",
+    "code": "scarlett_witch"
+  },
+  {
+    "id": "54",
+    "name": "Taylor Swift",
+    "code": "taylor_swift"
+  },
+  {
+    "id": "55",
+    "name": "Walter White",
+    "code": "walter_white"
+  },
+  {
+    "id": "56",
+    "name": "William Shakespeare",
+    "code": "william_shakespeare"
   }
 ]
