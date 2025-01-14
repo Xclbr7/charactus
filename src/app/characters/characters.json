@@ -283,12 +283,14 @@
   {
     "id": "52",
     "name": "Geralt Of Rivia",
-    "code": "geralt_of_rivia"
+    "code": "geralt_of_rivia",
+    "existence": "The Witcher"
   },
   {
     "id": "53",
     "name": "Scarlett Witch",
-    "code": "scarlett_witch"
+    "code": "scarlett_witch",
+    "existence": "Marvel Universe"
   },
   {
     "id": "54",
@@ -298,7 +300,8 @@
   {
     "id": "55",
     "name": "Walter White",
-    "code": "walter_white"
+    "code": "walter_white",
+    "existence": "Breaking Bad"
   },
   {
     "id": "56",
