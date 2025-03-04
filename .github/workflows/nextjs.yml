@@ -80,11 +80,20 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
+<<<<<<< HEAD
           git add src/app/characters/characters.json || echo "No changes to stage."
           
           # Check if there are changes to commit and push if so.
           if ! git diff-index --quiet HEAD; then
             git commit -m "Update characters.json via GitHub Actions"
+=======
+          git add src/app/characters/characters.json
+          
+          # Check if there are changes to commit
+          if ! git diff-index --quiet HEAD; then
+            git commit -m "Update characters.json via GitHub Actions"
+            echo "Changes committed, pushing to main..."
+>>>>>>> 7316d8ed6dee5443658df8ae5be500c698ec5fb8
             git push origin main || echo "Push failed, check permissions or branch protection rules."
           else
             echo "No changes detected, skipping commit."
