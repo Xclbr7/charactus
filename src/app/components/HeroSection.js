@@ -16,6 +16,9 @@ import { CarouselSlider } from "./CarouselSlider";
 import { CarouselSliderVertical } from "./CarouselSliderVertical";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { Background } from "./Background";
+import {Banner} from "./Banner"
+
+
 
 
 // --------------------------------------------------------------
@@ -23,40 +26,16 @@ import { Background } from "./Background";
 export const HeroSection = () => {
 
   
-  // const [jsonData, setJsonData] = useState(null);
-  // const [isHovered, setIsHovered] = useState(false);
-  // const [hoveredCard, setHoveredCard] = useState(null);
-
-  // const { open,setOpen, char, setChar } = useDialog();
-
-  // const fetchJsonData = async (location) => {
-  //   try {
-  //     const response = await fetch(location);
-  //     const data = await response.json();
-  //     setJsonData(data);
-  //     console.log(`JSON data for character ${location}:`, data);
-  //   } catch (error) {
-  //     console.error(`Error fetching JSON for character ${location}:`, error);
-  //   }
-  // };
-
-  // useEffect(() => {
-  //   if (hoveredCard) {
-  //     fetchJsonData(`./characters/${characterData[hoveredCard - 1].code}.json`);
-  //   }
-  // }, [hoveredCard]);
-
-  // const handleCardHover = (card, bool) => {
-  //   setHoveredCard(bool ? card.id : null);
-  //   setIsHovered(bool);
-  // };
-
-  // --------------------------------------------------------------
 
   return (
-    <div className="w-full pt-36 flex flex-col justify-center items-center text-white relative ">
+    <div className="w-full pt-32 flex flex-col justify-center items-center text-white relative ">
       <Background />
-      <h1 className="text-2xl font-medium text-white uppercase tracking-widest mb-10">Our Recommendations 🔥</h1>
+      
+      <Banner />
+      {/* <h1 className="flex flex-row justify-center items-center text-md font-light text-white uppercase tracking-[18px] bg-black bg-opacity-[20%] px-4 py-2 w-full">Latest Character Packs</h1> */}
+      <h1 className="flex flex-row justify-center items-center text-sm font-light text-white uppercase tracking-[12px] bg-black bg-opacity-[40%] px-4 py-2 w-full backdrop-blur-[8px]">Latest Character Packs this month</h1>
+
+      <h1 className="text-2xl font-medium text-white uppercase tracking-widest mb-10 pt-16">Our Recommendations 🔥</h1>
       <CarouselSlider />
       <div className="flex flex-row justify-between items-center w-full mt-20 mb-20 px-20 gap-20">
         <div className="w-1/2 flex flex-col justify-center"><h1 className="text-[30px] font-medium text-white uppercase tracking-widest mb-10 leading-[1.3]">Find the best characters for your AI</h1>

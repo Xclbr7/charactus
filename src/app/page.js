@@ -43,7 +43,6 @@ export default function Home() {
       <Modal />
       
         <Navbar />
-        
         <HeroSection />
         <GridSection />
         <Footer />
