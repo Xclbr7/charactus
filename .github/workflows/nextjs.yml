@@ -70,27 +70,15 @@ jobs:
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-<<<<<<< HEAD
           git add src/app/characters/characters.json || echo "No changes to stage."
-          
-          # Check if there are changes to commit and push if so.
           if ! git diff-index --quiet HEAD; then
             git commit -m "Update characters.json via GitHub Actions"
-=======
-          git add src/app/characters/characters.json
-          if ! git diff-index --quiet HEAD; then
-            git commit -m "Update characters.json via GitHub Actions"
-<<<<<<< HEAD
             echo "Changes committed, pushing to main..."
->>>>>>> 7316d8ed6dee5443658df8ae5be500c698ec5fb8
             git push origin main || echo "Push failed, check permissions or branch protection rules."
           else
             echo "No changes detected, skipping commit."
-=======
-            git push origin main
->>>>>>> b8ccce9f04975a30727e19fd0f39363d14bbc192
           fi
-
+      
       - name: Build with Next.js
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
       
@@ -108,4 +96,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v4 
+        uses: actions/deploy-pages@v4
