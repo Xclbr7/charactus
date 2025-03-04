@@ -162,39 +162,77 @@ const currentCharacters = filteredCharacters.slice(indexOfFirstCharacter, indexO
         ))}
       </div>
       <Pagination className="mt-8 mb-8">
-        <PaginationContent className="flex justify-center gap-2">
-          <PaginationItem>
-            <PaginationPrevious 
-              onClick={() => handlePageChange(Math.max(currentPage - 1, 1))}
-              disabled={currentPage === 1}
-              className="text-gray-200 hover:bg-gray-800 hover:text-white"
-            />
+  <PaginationContent className="flex justify-center gap-2">
+    <PaginationItem>
+      <PaginationPrevious 
+        onClick={() => handlePageChange(Math.max(currentPage - 1, 1))}
+        disabled={currentPage === 1}
+        className="text-gray-200 hover:bg-gray-800 hover:text-white"
+      />
+    </PaginationItem>
+    
+    {/* First Page */}
+    <PaginationItem>
+      <PaginationLink
+        onClick={() => handlePageChange(1)}
+        isActive={currentPage === 1}
+        className={`text-gray-200 hover:bg-gray-800 hover:text-white
+          ${currentPage === 1 ? 'bg-gray-900 text-white hover:bg-gray-800 border-gray-800' : ''}`}
+      >
+        1
+      </PaginationLink>
+    </PaginationItem>
+
+    {/* Show dots if there are many pages before current */}
+    {currentPage > 3 && <PaginationEllipsis />}
+
+    {/* Show current page and adjacent pages */}
+    {[...Array(3)].map((_, idx) => {
+      const pageNumber = currentPage + idx - 1;
+      if (pageNumber > 1 && pageNumber < totalPages) {
+        return (
+          <PaginationItem key={pageNumber}>
+            <PaginationLink
+              onClick={() => handlePageChange(pageNumber)}
+              isActive={currentPage === pageNumber}
+              className={`text-gray-200 hover:bg-gray-800 hover:text-white
+                ${currentPage === pageNumber ? 'bg-gray-900 text-white hover:bg-gray-800 border-gray-800' : ''}`}
+            >
+              {pageNumber}
+            </PaginationLink>
           </PaginationItem>
-          {[...Array(totalPages)].map((_, index) => (
-            <PaginationItem key={index}>
-              <PaginationLink
-                onClick={() => handlePageChange(index + 1)}
-                isActive={currentPage === index + 1}
-                className={`
-                    text-gray-200 hover:bg-gray-800 hover:text-white
-                    ${currentPage === index + 1 
-                      ? 'bg-gray-900 text-white hover:bg-gray-800 border-gray-800' 
-                      : 'hover:bg-gray-800'}
-                  `}
-              >
-                {index + 1}
-              </PaginationLink>
-            </PaginationItem>
-          ))}
-          <PaginationItem>
-            <PaginationNext 
-              onClick={() => handlePageChange(Math.min(currentPage + 1, totalPages))}
-              disabled={currentPage === totalPages}
-              className="text-gray-200 hover:bg-gray-800 hover:text-white"
-            />
-          </PaginationItem>
-        </PaginationContent>
-      </Pagination>
+        );
+      }
+      return null;
+    })}
+
+    {/* Show dots if there are many pages after current */}
+    {currentPage < totalPages - 2 && <PaginationEllipsis />}
+
+    {/* Last Page */}
+    {totalPages > 1 && (
+      <PaginationItem>
+        <PaginationLink
+          onClick={() => handlePageChange(totalPages)}
+          isActive={currentPage === totalPages}
+          className={`text-gray-200 hover:bg-gray-800 hover:text-white
+            ${currentPage === totalPages ? 'bg-gray-900 text-white hover:bg-gray-800 border-gray-800' : ''}`}
+        >
+          {totalPages}
+        </PaginationLink>
+      </PaginationItem>
+    )}
+
+    <PaginationItem>
+      <PaginationNext 
+        onClick={() => handlePageChange(Math.min(currentPage + 1, totalPages))}
+        disabled={currentPage === totalPages}
+        className="text-gray-200 hover:bg-gray-800 hover:text-white"
+      />
+    </PaginationItem>
+  </PaginationContent>
+</Pagination>
+
     </div>
   );
 };

@@ -1,53 +1,48 @@
 [
-    {
-        "id": "1",
-        "name": "Ana De Armas",
-        "code": "ana_de_armas"
-    },
-    {
-        "id": "2",
-        "name": "Henry Cavill",
-        "code": "henry_cavill"
-    },
-    {
-        "id": "3",
-        "name": "Ginger",
-        "code": "ginger",
-        "existence": "Animal"
-    },
-    {
-        "id": "4",
-        "name": "Sydney Sweeney",
-        "code": "sydney_sweeney"
-    },
+  {
+    "id": "1",
+    "name": "Ana De Armas",
+    "code": "ana_de_armas"
+  },
+  {
+    "id": "2",
+    "name": "Jensen Huang",
+    "code": "jensen_huang"
+  },
+  {
+    "id": "3",
+    "name": "Ginger",
+    "code": "ginger",
+    "existence": "Animal"
+  },
+  {
+    "id": "4",
+    "name": "Sydney Sweeney",
+    "code": "sydney_sweeney"
+  },
 
-    {
-        "id": "5",
-        "name": "John Wick",
-        "code": "john_wick",
-        "existence": "Fictional"
-    },
-    {
-        "id": "6",
-        "name": "Elon Musk",
-        "code": "elon_musk"
-    },
-    {
-        "id": "7",
-        "name": "Black Widow",
-        "code": "black_widow",
-        "existence": "Marvel Universe"
-    },
-    {
-        "id": "8",
-        "name": "Cinderella",
-        "code": "cinderella",
-        "existence": "Disney Princess"
-    },
-    {
-        "id": "9",
-        "name": "Lisa",
-        "code": "lisa",
-        "existence": "BLACKPINK (KPOP)"
-    }
+  {
+    "id": "5",
+    "name": "Sam Altman",
+    "code": "sam_altman",
+    "existence": "Entrepreneurs & Innovators"
+  },
+  {
+    "id": "6",
+    "name": "Elon Musk",
+    "code": "elon_musk",
+    "existence": "Entrepreneurs & Innovators"
+  },
+  {
+    "id": "7",
+    "name": "Cinderella",
+    "code": "cinderella",
+    "existence": "Disney Princess"
+  },
+  {
+    "id": "8",
+    "name": "Lisa",
+    "code": "lisa",
+    "existence": "BLACKPINK (KPOP)"
+  }
 ]
