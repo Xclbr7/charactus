@@ -31,7 +31,7 @@ export default function Home() {
           {/* <h1 className='text-white font-bold text-2xl text-center tracking-widest pointer-events-none'>CHARACTUS</h1> */}
         </div>
         <p className="w-1/2 text-lg uppercase tracking-widest">
-          Sorry, this website is only available on larger devices.
+          Sorry, this website is only available on larger devices for now.
         </p>
       </div>
     );
