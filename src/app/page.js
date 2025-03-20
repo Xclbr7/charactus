@@ -8,6 +8,7 @@ import { Modal } from "./components/Modal";
 import { DialogProvider } from "./contexts/DialogContext";
 import { GridSection } from "./components/GridSection";
 import { Footer } from "./components/Footer";
+// import PersonaContextProvider from './chatroom/context/PersonaContextProvider';
 
 export default function Home() {
   const [isMobile, setIsMobile] = useState(false);
@@ -40,12 +41,15 @@ export default function Home() {
   return (
     <div className="relative flex flex-col min-h-screen h-full w-[100%] overflow-x-hidden">
       <DialogProvider>
+        
+        
       <Modal />
       
         <Navbar />
         <HeroSection />
         <GridSection />
         <Footer />
+        
       </DialogProvider>
     </div>
   );

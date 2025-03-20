@@ -1,5 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
+import PersonaContextProvider from './chatroom/context/PersonaContextProvider';
+import DetailsContextProvider from "./chatroom/context/DetailsContextProvider";
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -14,7 +16,7 @@ const geistMono = localFont({
 
 export const metadata = {
   title: "Charactus",
-  description: "Your hub for AI charcaters",
+  description: "Your hub for AI characters",
 };
 
 export default function RootLayout({ children }) {
@@ -23,7 +25,11 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <DetailsContextProvider>
+        <PersonaContextProvider>
         {children}
+        </PersonaContextProvider>
+        </DetailsContextProvider>
       </body>
     </html>
   );

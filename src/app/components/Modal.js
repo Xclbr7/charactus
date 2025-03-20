@@ -18,23 +18,19 @@ import { LuFileJson } from 'react-icons/lu'
 import { TbFileTypePng } from 'react-icons/tb'
 import CodeBox from './CodeBox'
 import { PngParser } from './PngParser'
+import PersonaContext from '../chatroom/context/PersonaContext'
+// import personalities from '../personalities'
+import { useRouter } from 'next/navigation'
+import { useContext } from 'react'
 
 export const Modal = () => {
   const { open, setOpen, char, setChar } = useDialog();
   const [jsonData, setJsonData] = useState(null);
+  const router = useRouter();
+  const { setPersonality } = useContext(PersonaContext);
 
 
-  // const fetchJsonData = async (location) => {
-  //   try {
-  //     const response = await fetch(location);
-  //     const data = await response.json();
-  //     setJsonData(data);
-  //     console.log(`JSON data for character ${location}:`, data);
-  //   } catch (error) {
-  //     console.error(`Error fetching JSON for character ${location}:`, error);
-  //   }
-  // };
-
+  
   const fetchJsonData = async (filePath) => {
     try {
       // Fetch the file first
@@ -59,6 +55,39 @@ export const Modal = () => {
       fetchJsonData(`./characters/${char?.code}.png`);  // Note the leading forward slash
     }
   }, [char]);
+
+
+
+  // Function to handle chat with the character
+  // const handleChatWithChar = () => {
+  //   // Create a personality object based on the character data
+  //   const newPersonality = {
+  //     id: char?.code || 'default',
+  //     name: char?.name || 'Character',
+  //     avatar: `./characters/${char?.code}.png`,
+  //     description: jsonData?.description || '',
+  //     creatorcomment: jsonData?.creatorcomment || '',
+  //     // Add any other required properties for your personality object
+  //   };
+    
+  //   // Set the personality in the context
+  //   setPersonality(newPersonality);
+    
+  //   // Navigate to the chatroom page
+  //   router.push('/chatroom');
+    
+  //   // Close the modal
+  //   setOpen(false);
+  // };
+    
+  const newPersonality = {
+    id: char?.code || 'default',
+    name: char?.name || 'Character',
+    imageUrl: `./characters/${char?.code}.png`,
+    description: jsonData?.description || '',
+    creatorcomment: jsonData?.creatorcomment || '',
+    // Add any other required properties for your personality object
+  };
   
     
   return (
@@ -93,7 +122,14 @@ export const Modal = () => {
         
         </div>
         </div>
-        <CodeBox code={jsonData?.description}></CodeBox>
+         {/* New Chat button */}
+         {/* <Button 
+          onClick={handleChatWithChar} 
+          className="w-full bg-[#871E3A] hover:bg-gray-900 text-white rounded-[3px] transition-all duration-300 text-md flex flex-row gap-1 px-2"
+        >
+          Chat with {char?.name}
+        </Button> */}
+        <CodeBox code={jsonData?.description} newPersonality={newPersonality}></CodeBox>
        
       </DialogContent>
     </Dialog>
