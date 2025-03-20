@@ -54,7 +54,7 @@ const CodeBox = ({ code, newPersonality }) => {
     </button>
     <Link onClick={handleChatWithChar} href="/chatroom">
     <button
-      className="px-3 py-1 ml-2 text-sm font-medium text-white rounded-md bg-blue-500 hover:bg-blue-600"
+      className="px-3 py-1 ml-2 text-sm font-medium text-white rounded-md bg-[#00979b] hover:bg-blue-600"
       onClick={handleChatWithChar}
     >
       Chat
