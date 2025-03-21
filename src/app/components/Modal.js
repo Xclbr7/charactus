@@ -129,7 +129,7 @@ export const Modal = () => {
         >
           Chat with {char?.name}
         </Button> */}
-        <CodeBox code={jsonData?.description} newPersonality={newPersonality}></CodeBox>
+        <CodeBox code={jsonData?.description} newPersonality={newPersonality} type = 'character'></CodeBox>
        
       </DialogContent>
     </Dialog>

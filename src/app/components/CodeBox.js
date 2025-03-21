@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import { useContext } from 'react'
 import Link from 'next/link'
 
-const CodeBox = ({ code, newPersonality }) => {
+const CodeBox = ({ code, newPersonality, type }) => {
   const [isCopied, setIsCopied] = useState(false);
   const { personality, setPersonality } = useContext(PersonaContext);
     const router = useRouter();
@@ -53,12 +53,13 @@ const CodeBox = ({ code, newPersonality }) => {
       {isCopied ? 'Copied!' : 'Copy'}
     </button>
     <Link onClick={handleChatWithChar} href="/chatroom">
-    <button
+
+    {type === 'character' && <button
       className="px-3 py-1 ml-2 text-sm font-medium text-white rounded-md bg-[#00979b] hover:bg-blue-600"
       onClick={handleChatWithChar}
-    >
+    > 
       Chat
-    </button>
+    </button> }
     </Link>
   </div>
   <div className="overflow-y-auto h-full p-6 pt-4 text-gray-400">

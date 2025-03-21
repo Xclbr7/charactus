@@ -6,6 +6,8 @@ import PersonaContext from './context/PersonaContext';
 import { RiDeleteBin6Fill } from "react-icons/ri";
 import SidebarContext from './context/SidebarContext';
 import { FaPeopleGroup } from "react-icons/fa6";
+import Link from 'next/link';
+
 
 function Sidebar({authorNoteRef, apiRef, userNameRef}) {
 
@@ -41,7 +43,9 @@ function Sidebar({authorNoteRef, apiRef, userNameRef}) {
     
  `}>
 
-<img src="./chatbot_logo.png" className="h-auto w-[65%] mr-8" alt="logo" />
+<Link href="/" className="h-auto w-[65%] mr-8">
+<img src="./chatbot_logo.png"  alt="logo" />
+</Link>
 
 
 <div className='w-full gap-1 flex flex-col mt-2'>

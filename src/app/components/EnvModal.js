@@ -67,7 +67,7 @@ export const EnvModal = () => {
           
         </div>
         </div>
-        <CodeBox code={JSON.stringify(jsonData, null, 2)}></CodeBox>
+        <CodeBox code={JSON.stringify(jsonData, null, 2)} type='environment'></CodeBox>
        
       </DialogContent>
     </Dialog>
